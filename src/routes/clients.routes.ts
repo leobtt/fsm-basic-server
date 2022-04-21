@@ -3,7 +3,7 @@ const clientRouter = Router()
 
 import {create, list} from '../controllers/clients'
 
-clientRouter.get('/list', create)
-clientRouter.get('/new', list)
+clientRouter.get('/list', list)
+clientRouter.get('/new', create)
 
 export { clientRouter }
