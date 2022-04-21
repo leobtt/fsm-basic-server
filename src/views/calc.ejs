@@ -1,0 +1,13 @@
+<%- include ('partials/header')%>
+<% if (valorDaSoma === 'nenhum número fornecido') { %>
+  <h2><%= valorDaSoma %></h2>
+
+  <% } else { %>
+    <h2>A soma dos números é: <%= valorDaSoma %></h2>
+    <% if (valorDaSoma % 2 === 0) { %>
+      <p>O número é par.</p>
+      <% } else { %>
+        <p>O número é impar.</p>
+    <% } %>
+<% } %>
+<%- include ('partials/footer')%>
