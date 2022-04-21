@@ -9,4 +9,7 @@ app.use(express.json())
 app.use('/', homeRouter)
 app.use('/clients', clientRouter)
 
-app.listen(3333, () => console.log('server is running...'))
+if(process.env.NODE_ENV !== 'test'){
+  app.listen(3000, () => console.log('server is running...'))
+}
+export default app
